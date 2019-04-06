@@ -1,53 +1,52 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
-    "keywords": [
-        "spatie",
-        ":package_name"
-    ],
-    "homepage": "https://github.com/spatie/:package_name",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.1"
-    },
-    "require-dev": {
-        "larapack/dd": "^1.0",
-        "phpunit/phpunit": "^7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Spatie\\Skeleton\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
-            }
-        }
+  "name": "exfriend/:package_name",
+  "description": ":package_description",
+  "keywords": [
+    "exfriend",
+    ":package_name"
+  ],
+  "homepage": "https://github.com/exfriend/:package_name",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladislav Novik",
+      "email": "librevlad@gmail.com",
+      "homepage": "https://serpentine.io",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "larapack/dd": "^1.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exfriend\\:package_namespace_name\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Exfriend\\:package_namespace_name\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Exfriend\\:package_namespace_name\\:package_namespace_nameServiceProvider"
+      ],
+      "aliases": {
+        ":package_namespace_name": "Exfriend\\:package_namespace_name\\:package_namespace_nameFacade"
+      }
+    }
+  }
 }

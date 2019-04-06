@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Skeleton;
+namespace Exfriend\:package_namespace_name;
 
-class SkeletonClass
+class :package_namespace_nameClass
 {
     /**
-     * Create a new Skeleton Instance.
+     * Create a new :package_namespace_name Instance.
      */
     public function __construct()
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Skeleton;
+namespace Exfriend\:package_namespace_name;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Spatie\Skeleton\SkeletonClass
+ * @see \Exfriend\:package_namespace_name\:package_namespace_nameClass
  */
-class SkeletonFacade extends Facade
+class :package_namespace_nameFacade extends Facade
 {
     /**
      * Get the registered name of the component.

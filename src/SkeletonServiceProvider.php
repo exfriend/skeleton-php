@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Skeleton;
+namespace Exfriend\:package_namespace_name;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class :package_namespace_nameServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
