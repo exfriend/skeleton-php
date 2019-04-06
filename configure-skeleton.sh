@@ -49,25 +49,20 @@ mv ./src/SkeletonFacade.php ./src/${package_nsn}Facade.php
 mv ./src/SkeletonServiceProvider.php ./src/${package_nsn}ServiceProvider.php
 
 if [[ "$OSTYPE" == "darwin" ]]; then
-    find . -type f -exec sed -i '' -e "s/:author_name/$author_name/" {} \;
-    find . -type f -exec sed -i '' -e "s/:author_username/$author_username/" {} \;
-    find . -type f -exec sed -i '' -e "s/:author_email/$author_email/" {} \;
-    find . -type f -exec sed -i '' -e "s/:package_nsn/$package_nsn/" {} \;
-    find . -type f -exec sed -i '' -e "s/:package_name/$package_name/" {} \;
-    find . -type f -exec sed -i '' -e "s/:package_description/$package_description/" {} \;
-
-    sed -i '' -e "/^\*\*Note:\*\* Replace/d" README.md
+    find . -type f -exec sed -i '' -e "s/:author_name/$author_name/g" {} \;
+    find . -type f -exec sed -i '' -e "s/:author_username/$author_username/g" {} \;
+    find . -type f -exec sed -i '' -e "s/:author_email/$author_email/g" {} \;
+    find . -type f -exec sed -i '' -e "s/:package_nsn/$package_nsn/g" {} \;
+    find . -type f -exec sed -i '' -e "s/:package_name/$package_name/g" {} \;
+    find . -type f -exec sed -i '' -e "s/:package_description/$package_description/g" {} \;
 else
-    find . -type f -exec sed -i -e "s/:author_name/$author_name/" {} \;
-    find . -type f -exec sed -i -e "s/:author_username/$author_username/" {} \;
-    find . -type f -exec sed -i -e "s/:author_email/$author_email/" {} \;
-    find . -type f -exec sed -i -e "s/:package_nsn/$package_nsn/" {} \;
-    find . -type f -exec sed -i -e "s/:package_name/$package_name/" {} \;
-    find . -type f -exec sed -i -e "s/:package_description/$package_description/" {} \;
-
-    sed -i -e "/^\*\*Note:\*\* Replace/d" README.md
+    find . -type f -exec sed -i -e "s/:author_name/$author_name/g" {} \;
+    find . -type f -exec sed -i -e "s/:author_username/$author_username/g" {} \;
+    find . -type f -exec sed -i -e "s/:author_email/$author_email/g" {} \;
+    find . -type f -exec sed -i -e "s/:package_nsn/$package_nsn/g" {} \;
+    find . -type f -exec sed -i -e "s/:package_name/$package_name/g" {} \;
+    find . -type f -exec sed -i -e "s/:package_description/$package_description/g" {} \;
 fi
-
 
 echo "Replaced all values and reset git directory, self destructing in 3... 2... 1..."
 
