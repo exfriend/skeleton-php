@@ -1,11 +1,11 @@
 <?php
 
-namespace Exfriend\:package_namespace_name;
+namespace Exfriend\:package_nsn;
 
-class :package_namespace_nameClass
+class :package_nsnClass
 {
     /**
-     * Create a new :package_namespace_name Instance.
+     * Create a new :package_nsn Instance.
      */
     public function __construct()
     {

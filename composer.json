@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Exfriend\\:package_namespace_name\\": "src"
+      "Exfriend\\:package_nsn\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Exfriend\\:package_namespace_name\\Tests\\": "tests"
+      "Exfriend\\:package_nsn\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -42,10 +42,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Exfriend\\:package_namespace_name\\:package_namespace_nameServiceProvider"
+        "Exfriend\\:package_nsn\\:package_nsnServiceProvider"
       ],
       "aliases": {
-        ":package_namespace_name": "Exfriend\\:package_namespace_name\\:package_namespace_nameFacade"
+        ":package_nsn": "Exfriend\\:package_nsn\\:package_nsnFacade"
       }
     }
   }

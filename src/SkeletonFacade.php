@@ -1,13 +1,13 @@
 <?php
 
-namespace Exfriend\:package_namespace_name;
+namespace Exfriend\:package_nsn;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Exfriend\:package_namespace_name\:package_namespace_nameClass
+ * @see \Exfriend\:package_nsn\:package_nsnClass
  */
-class :package_namespace_nameFacade extends Facade
+class :package_nsnFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class :package_namespace_nameFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'skeleton';
+        return ':package_name';
     }
 }

@@ -18,8 +18,8 @@ current_directory=`basename $current_directory`
 read -p "Package name ($current_directory): " package_name
 package_name=${package_name:-$current_directory}
 
-read -p "Package namespace name e.g. Discounter ($current_directory): " package_namespace_name
-package_namespace_name=${package_namespace_name:-$current_directory}
+read -p "Package namespace name e.g. Discounter ($current_directory): " package_nsn
+package_nsn=${package_nsn:-$current_directory}
 
 read -p "Package description: " package_description
 
@@ -44,15 +44,15 @@ git init
 
 echo
 
-mv ./src/SkeletonClass.php ./src/${package_namespace_name}Class.php
-mv ./src/SkeletonFacade.php ./src/${package_namespace_name}Facade.php
-mv ./src/SkeletonServiceProvider.php ./src/${package_namespace_name}ServiceProvider.php
+mv ./src/SkeletonClass.php ./src/${package_nsn}Class.php
+mv ./src/SkeletonFacade.php ./src/${package_nsn}Facade.php
+mv ./src/SkeletonServiceProvider.php ./src/${package_nsn}ServiceProvider.php
 
 if [[ "$OSTYPE" == "darwin" ]]; then
     find . -type f -exec sed -i '' -e "s/:author_name/$author_name/" {} \;
     find . -type f -exec sed -i '' -e "s/:author_username/$author_username/" {} \;
     find . -type f -exec sed -i '' -e "s/:author_email/$author_email/" {} \;
-    find . -type f -exec sed -i '' -e "s/:package_namespace_name/$package_namespace_name/" {} \;
+    find . -type f -exec sed -i '' -e "s/:package_nsn/$package_nsn/" {} \;
     find . -type f -exec sed -i '' -e "s/:package_name/$package_name/" {} \;
     find . -type f -exec sed -i '' -e "s/:package_description/$package_description/" {} \;
 
@@ -61,7 +61,7 @@ else
     find . -type f -exec sed -i -e "s/:author_name/$author_name/" {} \;
     find . -type f -exec sed -i -e "s/:author_username/$author_username/" {} \;
     find . -type f -exec sed -i -e "s/:author_email/$author_email/" {} \;
-    find . -type f -exec sed -i -e "s/:package_namespace_name/$package_namespace_name/" {} \;
+    find . -type f -exec sed -i -e "s/:package_nsn/$package_nsn/" {} \;
     find . -type f -exec sed -i -e "s/:package_name/$package_name/" {} \;
     find . -type f -exec sed -i -e "s/:package_description/$package_description/" {} \;
 

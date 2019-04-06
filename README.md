@@ -13,7 +13,7 @@ composer require exfriend/:package_name
 ## Usage
 
 ``` php
-$skeleton = new Exfriend\:package_namespace_name();
+$skeleton = new Exfriend\:package_nsn();
 echo $skeleton->echoPhrase('Hello, Exfriend!');
 ```
 

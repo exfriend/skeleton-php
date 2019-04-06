@@ -1,6 +1,6 @@
 <?php
 
-namespace Exfriend\:package_namespace_name\Tests;
+namespace Exfriend\:package_nsn\Tests;
 
 use PHPUnit\Framework\TestCase;
 
