@@ -1,11 +1,11 @@
 {
-  "name": "exfriend/:package_name",
+  "name": ":author_name/:package_name",
   "description": ":package_description",
   "keywords": [
-    "exfriend",
+    ":author_name",
     ":package_name"
   ],
-  "homepage": "https://github.com/exfriend/:package_name",
+  "homepage": "https://github.com/:author_name/:package_name",
   "license": "MIT",
   "authors": [
     {
@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Exfriend\\:package_nsn\\": "src"
+      ":author_nsn\\:package_nsn\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Exfriend\\:package_nsn\\Tests\\": "tests"
+      ":author_nsn\\:package_nsn\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -42,10 +42,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Exfriend\\:package_nsn\\:package_nsnServiceProvider"
+        ":author_nsn\\:package_nsn\\:package_nsnServiceProvider"
       ],
       "aliases": {
-        ":package_nsn": "Exfriend\\:package_nsn\\:package_nsnFacade"
+        ":package_nsn": ":author_nsn\\:package_nsn\\:package_nsnFacade"
       }
     }
   }

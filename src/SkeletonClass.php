@@ -1,6 +1,6 @@
 <?php
 
-namespace Exfriend\:package_nsn;
+namespace :author_nsn\:package_nsn;
 
 class :package_nsnClass
 {

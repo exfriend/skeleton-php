@@ -1,6 +1,6 @@
 <?php
 
-namespace Exfriend\:package_nsn;
+namespace :author_nsn\:package_nsn;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,6 +31,6 @@ class :package_nsnServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'skeleton');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', ':package_name');
     }
 }

@@ -1,4 +1,4 @@
-# Very short description of the package
+# Awesome Package
 
 This is where your description should go. Try and limit it to a paragraph or two.
 
@@ -7,14 +7,13 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require exfriend/:package_name
+composer require :author_name/:package_name
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new Exfriend\:package_nsn();
-echo $skeleton->echoPhrase('Hello, Exfriend!');
+// Work In Progress
 ```
 
 ### Testing
