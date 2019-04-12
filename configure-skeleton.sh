@@ -3,8 +3,8 @@
 git_name=`git config user.name`;
 git_email=`git config user.email`;
 
-read -p "Author namespace name e.g. DevWrokout ($git_name): " author_nsn
-author_nsn=${author_nsn:-$git_name}
+read -p "Author namespace name e.g. DevWorkout ($git_name): " author_nsn
+author_nsn=${author_nsn:-'DevWorkout'}
 
 read -p "Author name ($git_name): " author_name
 author_name=${author_name:-$git_name}
